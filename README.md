@@ -1,1 +1,1 @@
-codewars.com kata
+http://codewars.com kata
