@@ -1,15 +1,12 @@
 function solution(str, ending) {
-  var result;
-  for (var i = 0; i < ending.length; i++)
-    console.log(str[str.length - 1 - i] + " " + ending[ending.length -1 - i]);
-    if (str[ending.length - 1 - i] !== ending[ending.length -1 - i]) {
-      result = false;
-    }
-  return result;
+  var re = new RegExp("(" + ending + ")$");
+  return re.test(str);
 }
 
-console.log(solution("sumo", "omo"));
+console.log(solution(process.argv[2], process.argv[3]));
 
-
-//console.log(str[ending.length - 1 - i] + " " + ending[ending.length -1 - i]);
-
+// Alternate solution:
+//
+// function solution(str, ending){
+//  return str.substring(str.length - ending.length) == ending;
+// } 
