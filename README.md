@@ -1,1 +1,3 @@
-http://codewars.com kata
+http://codewars.com/users/gyaresu
+
+Javascript / Python
